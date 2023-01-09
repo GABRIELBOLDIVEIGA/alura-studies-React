@@ -30,7 +30,7 @@ export class Formulario extends React.Component<{
                 </div>
                 <div className={style.inputContainer}>
                     <label htmlFor="tempo">Tempo</label>
-                    <input type="time" step="1" name="tempo" value={this.state.tempo} onChange={(evento) => this.setState({ ...this.state, tempo: evento.target.value })} id="tempo" min="00:00:00" max="01:00:00" required />
+                    <input type="time" step="1" name="tempo" value={this.state.tempo} onChange={(evento) => this.setState({ ...this.state, tempo: evento.target.value })} id="tempo" min="00:00:00" max="10:00:00" required />
                 </div>
                 <Botao type="submit">Adicionar</Botao>
             </form>
